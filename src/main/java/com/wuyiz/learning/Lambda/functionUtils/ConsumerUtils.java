@@ -4,7 +4,10 @@ import java.util.function.Consumer;
 
 /**
  * @ClassName AndThen
- * @Description: public interface Consumer<T>表示接受单个输入参数并且不返回结果的操作。 与大多数其他功能接口不同， Consumer预期通过副作用进行操作。
+ * @Description: public interface Consumer<T>表示接受单个输入参数并且不返回结果的操作。
+ *                  与大多数其他功能接口不同， Consumer预期通过副作用进行操作。
+ *
+ *                  消费性接口，给我一个数据，消费其值
  * @Author AllureLove
  * @Date 2019/11/17 
  * @Version V1.0
