@@ -18,7 +18,7 @@ public class Demo01Collections {
         list.add("c");
         list.add("d");
         list.add("e");*/
-        Collections.addAll(list,"a","b","c","d");
+        Collections.addAll(list, "a", "b", "c", "d");
         System.out.println("list => " + list);
 
         Collections.shuffle(list);

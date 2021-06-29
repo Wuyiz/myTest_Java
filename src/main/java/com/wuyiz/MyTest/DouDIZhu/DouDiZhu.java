@@ -1,6 +1,9 @@
 package com.wuyiz.MyTest.DouDIZhu;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * @ClassName DouDiZhu
@@ -11,7 +14,7 @@ import java.util.*;
  *                  4.排序
  *                  5.看牌
  * @Author AllureLove
- * @Date 2019/11/11 
+ * @Date 2019/11/11
  * @Version V1.0
  **/
 public class DouDiZhu {
@@ -32,8 +35,8 @@ public class DouDiZhu {
     private static ArrayList<Integer> diPai = new ArrayList<>();
 
     static {
-        colors = List.of("♠", "♥", "♦", "♣");
-        numbers = List.of("2", "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3");
+        //colors = List.of("♠", "♥", "♦", "♣");
+        //numbers = List.of("2", "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3");
         poker.put(0, "大王");
         poker.put(1, "小王");
         pokerIndex.add(0);

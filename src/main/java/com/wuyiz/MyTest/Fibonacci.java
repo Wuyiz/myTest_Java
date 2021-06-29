@@ -1,8 +1,6 @@
 package com.wuyiz.MyTest;
 
 import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * @ClassName Fibonacci
@@ -17,14 +15,18 @@ public class Fibonacci {
     public static void main(String[] args) {
         LinkedHashMap<Integer, Integer> fibo = new LinkedHashMap<>();
 
-        for (int i = 0; i < 20; i++) {
-            fibo.put(i, Fib(i));
-        }
+        //for (int i = 0; i < 20; i++) {
+        //    fibo.put(i, Fib(i));
+        //}
+
+        Fib(5);
+        
 
         System.out.println("斐波那契数列：" + fibo);
     }
 
     private static int Fib(int i) {
+        System.out.print(i + "  ");
         if (i < 2) return i == 0 ? 0 : 1;
         return Fib(i - 1) + Fib(i - 2);     //递归
     }

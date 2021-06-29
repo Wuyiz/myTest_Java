@@ -76,7 +76,7 @@ public class Demo02LinkedList {
         linked.push("wuyiz");
         System.out.println("push() => " + linked);
 
-        linked.addLast("666");  //等效于 add()
+        linked.addLast("wuyiz");  //等效于 add()
         System.out.println("addLast() => " + linked);
 
         System.out.println();

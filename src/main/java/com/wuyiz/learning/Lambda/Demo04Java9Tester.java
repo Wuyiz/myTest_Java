@@ -1,8 +1,9 @@
 package com.wuyiz.learning.Lambda;
 
-import javax.sql.rowset.spi.SyncResolver;
-import java.lang.reflect.Array;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @ClassName Demo04Java9Tester
@@ -29,7 +30,7 @@ public class Demo04Java9Tester {
         list.add("123");
         list.add("123123");
         Comparator<String> comparator = Comparator.comparingInt(String::length).reversed();
-        Collections.sort(list,comparator);
+        list.sort(comparator);
         System.out.println(list);
 
 

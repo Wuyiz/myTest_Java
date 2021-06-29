@@ -24,7 +24,6 @@ public class Demo02ArraysPerson {
         //匿名内部类重写comparator接口里的compare()
         System.out.println("=======匿名内部类升序排序：=================");
         Arrays.sort(arr, new Comparator<Person>() {
-
             @Override
             public int compare(Person o1, Person o2) {
                 return o1.getAge() - o2.getAge();

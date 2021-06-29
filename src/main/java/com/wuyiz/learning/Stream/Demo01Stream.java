@@ -8,7 +8,7 @@ import java.util.ArrayList;
  *               Stream屎JDK1.8之后出现的
  *               流关注的是做什么，而不是怎么做
  * @Author AllureLove
- * @Date 2019/11/17 
+ * @Date 2019/11/17
  * @Version V1.0
  **/
 public class Demo01Stream {
@@ -16,13 +16,13 @@ public class Demo01Stream {
         ArrayList<String> list = new ArrayList<>();
         list.add("张无忌");
         list.add("周芷若");
-        list.add("赵敏");
+        list.add("张敏");
         list.add("张筱雨");
         list.add("张三丰");
         System.out.println("list => " + list);
 
         list.stream().filter(name->name.startsWith("张"))
-                .filter(name->name.length()==3)
+                .filter(name->name.length()==2)
                 .forEach(System.out::println);
     }
 }

@@ -24,35 +24,21 @@ public class Demo03SortComparator {
         list.add(3);
         System.out.println("list => " + list);
 
-        Collections.sort(list, new Comparator<Integer>() {
-
-            @Override
-            public int compare(Integer o1, Integer o2) {
-//                return o1 - o2;   //升序
-                return o2 - o1; //降序
-            }
+        Collections.sort(list, (o1, o2) -> {
+            //return o1 - o2;   //升序
+            return o2 - o1; //降序
         });
         System.out.println("list sort ASC/DESC => " + list);
 
         ArrayList<Student> list_1 = new ArrayList<>();
-        list_1.add(new Student("t腾讯",20));
-        list_1.add(new Student("百度",24));
-        list_1.add(new Student("阿里巴巴",18));
-        list_1.add(new Student("b阿里巴巴",20));
+        list_1.add(new Student("t腾讯", 20));
+        list_1.add(new Student("百度", 24));
+        list_1.add(new Student("阿里巴巴", 18));
+        list_1.add(new Student("b阿里巴巴", 20));
 
-        Collections.sort(list_1,new Comparator<Student>(){
-
-            @Override
-            public int compare(Student o1, Student o2) {
-                //按照年龄升序
-                int result = o1.getAge() - o2.getAge();
-                //如果两人年龄相同，就使用姓名首字比较
-                if (result == 0) {
-                    result = o1.getName().charAt(0) - o2.getName().charAt(0);
-                }
-                return result;
-            }
-        });
+        //按照年龄升序
+        //如果两人年龄相同，就使用姓名首字比较
+        Collections.sort(list_1, Comparator.comparingInt(Student::getAge).thenComparingInt(o -> o.getName().charAt(0)));
         System.out.println("list_1 => " + list_1);
     }
 }

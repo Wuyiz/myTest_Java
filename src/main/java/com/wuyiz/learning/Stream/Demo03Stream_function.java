@@ -40,7 +40,7 @@ public class Demo03Stream_function {
         Stream<String> stream1 = Stream.of("喜羊羊", "美羊羊", "懒洋洋", "灰太狼", "红太狼");
         Stream<String> stream2 = Stream.of("张三", "李四", "王五", "赵六", "田七");
 
-        Stream<String> stream_concat = Stream.concat(stream1,stream2);
+        Stream<String> stream_concat = Stream.concat(stream1, stream2);
         stream_concat.forEach(name -> System.out.print(name + " "));
     }
 
@@ -80,7 +80,7 @@ public class Demo03Stream_function {
      */
     private static void map() {
         Stream<String> stream = Stream.of("1", "2", "3", "4", "5");
-        stream.map(s -> Integer.valueOf(s)).forEach(s -> System.out.printf(s + " "));
+        stream.map(Integer::valueOf).map(s -> ++s).forEach(s -> System.out.print(s + " "));
     }
 
     /**
@@ -89,7 +89,7 @@ public class Demo03Stream_function {
      */
     private static void filter() {
         Stream<String> stream = Stream.of("张三", "李四", "王五", "赵六", "田七");
-        stream.filter(name -> name.startsWith("张")).forEach(name -> System.out.printf(name + " "));
+        stream.filter(name -> name.startsWith("张")).forEach(name -> System.out.print(name + " "));
     }
 
     /**

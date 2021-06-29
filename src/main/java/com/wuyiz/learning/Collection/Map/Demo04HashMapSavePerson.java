@@ -1,4 +1,4 @@
-package com.wuyiz.learning.Map;
+package com.wuyiz.learning.Collection.Map;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.Set;
  **/
 public class Demo04HashMapSavePerson {
     public static void main(String[] args) {
-//        show01();
+        show01();
         show02();
     }
 

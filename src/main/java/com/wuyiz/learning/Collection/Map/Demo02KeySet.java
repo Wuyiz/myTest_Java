@@ -1,4 +1,4 @@
-package com.wuyiz.learning.Map;
+package com.wuyiz.learning.Collection.Map;
 
 import java.util.HashMap;
 import java.util.Iterator;

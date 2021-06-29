@@ -1,4 +1,4 @@
-package com.wuyiz.learning.Map;
+package com.wuyiz.learning.Collection.Map;
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ import java.util.Objects;
  * @ClassName Person
  * @Description: TODO
  * @Author AllureLove
- * @Date 2019/11/11 
+ * @Date 2019/11/11
  * @Version V1.0
  **/
 public class Person {

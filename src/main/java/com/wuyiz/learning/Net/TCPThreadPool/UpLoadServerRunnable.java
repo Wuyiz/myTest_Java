@@ -43,7 +43,7 @@ public class UpLoadServerRunnable implements Runnable {
             String fileName = "FileUpLoad_" + time + new Random().nextInt(999999) + ".png";
 
             //5.创建本地字节输出流FileOutputStream对象，绑定输出的文件地址
-            FileOutputStream fileOutputStream = new FileOutputStream(file + file.separator + fileName);
+            FileOutputStream fileOutputStream = new FileOutputStream(file + File.separator + fileName);
             //6.使用网络字节输入流InputStream对象中的read()读取客户端上传的文件
             int len = 0;
             byte[] bytes = new byte[1024];

@@ -1,6 +1,5 @@
-package com.wuyiz.learning.Map;
+package com.wuyiz.learning.Collection.Map;
 
-import javax.swing.text.html.HTML;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
@@ -29,9 +28,9 @@ public class Demo06Hashtable {
         Hashtable<String, String> hashtable = new Hashtable<>();
 
         try {
-            hashtable.put(null, "a");
-//            hashtable.put(null, null);
-//            hashtable.put("a", null);
+            //hashtable.put(null, "a");
+            //hashtable.put(null, null);
+            hashtable.put("a", null);
             System.out.println("hashtable => " + hashtable);
         } catch (Exception e) {
             System.out.println("Exception = " + e.toString());

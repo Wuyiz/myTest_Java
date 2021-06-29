@@ -1,4 +1,4 @@
-package com.wuyiz.learning.Map;
+package com.wuyiz.learning.Collection.Map;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +20,7 @@ import java.util.Map;
  *
  *  java.util.LinkedHashMap<k,v>集合 extends HashMap<k,v>集合
  *  LinkedHashMap集合的特点：
- *      1.LinkedHashMap集合底层是哈希表+链表（保证迭代的顺序）
+ *      1.LinkedHashMap集合底层是哈希表+双向链表（保证迭代的顺序）
  *      2.LinkedHashMap集合是一个有序的集合，存储元素和取出元素的顺序一致
  */
 public class Demo01Map {

@@ -1,8 +1,7 @@
-package com.wuyiz.learning.Map;
+package com.wuyiz.learning.Collection.Map;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * java.util.LinkedHashMap<K,V> extends HashMap<K,V>
